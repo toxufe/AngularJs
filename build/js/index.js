@@ -10,6 +10,10 @@ angular.module('app').config(['$stateProvider','$urlRouterProvider',function($st
 		url:'/position:id',
 		templateUrl:'view/position.html',
 		controller:'positionCtrl'
+	}).state('company',{
+		url:'/company:id',
+		templateUrl:'view/company.html',
+		controller:'companyCtrl'
 	});
 	$urlRouterProvider.otherwise('main');
 }]);
@@ -21,6 +25,11 @@ angular.module('app').config(['$stateProvider','$urlRouterProvider',function($st
 //         $locationProvider.hashPrefix('');
 //     }
 // ]);
+
+'use strict';
+angular.module('app').controller('companyCtrl', ['$scope', function($scope) {
+  
+}]);
 
 'use strict';
 angular.module('app').controller('mainCtrl', ['$scope', function($scope) {
@@ -76,6 +85,15 @@ angular.module('app').directive('appCompany',[function(){
     restrict:'A',
     replace:true,
     templateUrl:'view/template/company.html',
+  };
+}]);
+
+'use strict';
+angular.module('app').directive('appPositionClass',[function(){
+  return {
+    restrict:'A',
+    replace:true,
+    templateUrl:'view/template/positionClass.html'
   };
 }]);
 

@@ -117,7 +117,7 @@
   top: 40px;
 }
 .company-info {
-  padding: 20px 15px 13px 85px;
+  padding: 20px 15px 1px 85px;
 }
 .company-info img {
   height: 1.6rem;
@@ -126,6 +126,35 @@
 }
 .company-info p {
   margin-top: 0;
+}
+.position-class {
+  padding: 13px 9px;
+  border-top: 1px solid #d4d4d4;
+}
+.position-class h5 {
+  margin: 0 0 35px 0;
+}
+.position-class button {
+  border: none;
+  background: #def8f5;
+  border-radius: 20px;
+  padding: 10px 23px;
+  margin-right: 11px;
+}
+.position-class button.active {
+  background-color: #12d5b5;
+  color: #fff;
+}
+.position-class ul {
+  border-top: 1px solid #d4d4d4;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+.position-class ul li {
+  list-style: none;
+}
+.position-class ul li span {
+  color: #f00;
 }
 .bottom-btn {
   background: #12d5b5;
