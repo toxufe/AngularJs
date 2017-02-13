@@ -5,11 +5,11 @@ angular.module('app').config(['$stateProvider','$urlRouterProvider',function($st
 		templateUrl:'view/main.html',
 		controller:'mainCtrl'
 	}).state('position',{
-		url:'/position:id',
+		url:'/position/:id',
 		templateUrl:'view/position.html',
 		controller:'positionCtrl'
 	}).state('company',{
-		url:'/company:id',
+		url:'/company/:id',
 		templateUrl:'view/company.html',
 		controller:'companyCtrl'
 	});
@@ -17,9 +17,9 @@ angular.module('app').config(['$stateProvider','$urlRouterProvider',function($st
 }]);
 
 
-// angular.module('app').config([
-//     '$locationProvider',
-//     function($locationProvider) {
-//         $locationProvider.hashPrefix('');
-//     }
-// ]);
+angular.module('app').config([
+    '$locationProvider',
+    function($locationProvider) {
+        $locationProvider.hashPrefix('');
+    }
+]);
