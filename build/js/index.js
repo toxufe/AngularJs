@@ -1,3 +1,4 @@
+sole.log(1111);
 'use strict';
 angular.module('app',['ui.router']);
 'use strict';
