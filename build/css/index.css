@@ -8,6 +8,18 @@
 .clear {
   clear: both;
 }
+.p-r {
+  position: relative;
+}
+.p-a {
+  position: absolute;
+}
+.c-w {
+  color: white;
+}
+.c-r {
+  color: red;
+}
 .head {
   background: #12d5b5;
   height: 1.06666667rem;
@@ -25,6 +37,11 @@
   margin-top: 0.18666667rem;
   padding-left: 0.4rem;
   padding-right: 0.4rem;
+}
+.head .back-btn {
+  font-size: 20px;
+  width: 1rem;
+  left: 0;
 }
 .foot {
   border-top: 1px solid #d4d4d4;
@@ -88,6 +105,53 @@
   margin: 0;
   padding: 0;
 }
+.position-info {
+  border-bottom: 1px solid #ccc;
+  padding: 26px 10px 18px 10px;
+}
+.position-info .ml {
+  margin-left: 20px;
+}
+.position-info img {
+  right: 24px;
+  top: 40px;
+}
+.company-info {
+  padding: 20px 15px 13px 85px;
+}
+.company-info img {
+  height: 1.6rem;
+  width: 1.6rem;
+  left: 15px;
+}
+.company-info p {
+  margin-top: 0;
+}
+.bottom-btn {
+  background: #12d5b5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1.2rem;
+  border: none;
+}
+.position-desc {
+  margin-top: 10px;
+}
+.position-desc h5 {
+  font-size: 0.42666667rem;
+  margin-top: 0;
+  padding-left: 10px;
+  border-bottom: 1px solid #ccc;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+}
+.position-desc pre {
+  padding-left: 10px;
+  margin-left: 0;
+}
 .d-ib {
   display: inline-block;
 }
@@ -108,6 +172,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  font-family: "微软雅黑";
 }
 body {
   font-size: 0.42666667rem;

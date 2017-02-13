@@ -6,18 +6,22 @@ angular.module('app').config(['$stateProvider','$urlRouterProvider',function($st
 		url:'/main',
 		templateUrl:'view/main.html',
 		controller:'mainCtrl'
+	}).state('position',{
+		url:'/position:id',
+		templateUrl:'view/position.html',
+		controller:'positionCtrl'
 	});
-
 	$urlRouterProvider.otherwise('main');
 }]);
 
 
-// angular.module('app').config([  
+// angular.module('app').config([
 //     '$locationProvider',
 //     function($locationProvider) {
 //         $locationProvider.hashPrefix('');
 //     }
 // ]);
+
 'use strict';
 angular.module('app').controller('mainCtrl', ['$scope', function($scope) {
   $scope.list = [{
@@ -50,6 +54,11 @@ angular.module('app').controller('mainCtrl', ['$scope', function($scope) {
 }]);
 
 'use strict';
+angular.module('app').controller('positionCtrl', ['$scope', function($scope) {
+  $scope.haha=555;
+}]);
+
+'use strict';
 angular.module('app').directive('appBodyList',[function(){
   return {
     restrict:'A',
@@ -58,6 +67,15 @@ angular.module('app').directive('appBodyList',[function(){
     scope:{
       data:'='
     }
+  };
+}]);
+
+'use strict';
+angular.module('app').directive('appCompany',[function(){
+  return {
+    restrict:'A',
+    replace:true,
+    templateUrl:'view/template/company.html',
   };
 }]);
 
@@ -76,5 +94,37 @@ angular.module('app').directive('appHead',[function(){
     restrict:'A',   //利用属性调用指令
     replace:true, //是否替换父级元素
     templateUrl:'view/template/head.html'
+  };
+}]);
+
+'use strict';
+angular.module('app').directive('appHeadBar',[function(){
+  return {
+    restrict:'A',   //利用属性调用指令
+    replace:true, //是否替换父级元素
+    templateUrl:'view/template/headBar.html',
+    scope:{
+      text:"@"
+    },
+    link:function(scope){
+      scope.back = function(){
+        window.history.back();
+      }
+    }
+  };
+}]);
+
+'use strict';
+angular.module('app').directive('appPositionInfo',[function(){
+  return {
+    restrict:'A',
+    replace:true,
+    templateUrl:'view/template/positionInfo.html',
+    scope:{
+      isActive:"="
+    },
+    link:function(scope){
+      scope.imgPath = scope.isActive?'image/star-active.png':'image/star.png';
+    }
   };
 }]);

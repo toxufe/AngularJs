@@ -4,13 +4,16 @@ angular.module('app').config(['$stateProvider','$urlRouterProvider',function($st
 		url:'/main',
 		templateUrl:'view/main.html',
 		controller:'mainCtrl'
+	}).state('position',{
+		url:'/position:id',
+		templateUrl:'view/position.html',
+		controller:'positionCtrl'
 	});
-
 	$urlRouterProvider.otherwise('main');
 }]);
 
 
-// angular.module('app').config([  
+// angular.module('app').config([
 //     '$locationProvider',
 //     function($locationProvider) {
 //         $locationProvider.hashPrefix('');

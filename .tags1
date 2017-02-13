@@ -4,6 +4,7 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-div	D:\web\laragon\www\webapp\src\view\main.html	/^<div app-head=""><\/div>$/;"	function	line:1
-div	D:\web\laragon\www\webapp\src\view\main.html	/^<div data="list" app-body-list=""><\/div>$/;"	function	line:2
-div	D:\web\laragon\www\webapp\src\view\main.html	/^<div app-foot=""><\/div>$/;"	function	line:3
+.bottom-btn	D:\web\laragon\www\webapp\src\style\position.less	/^.bottom-btn {$/;"	function	line:1
+.position-desc	D:\web\laragon\www\webapp\src\style\position.less	/^.position-desc {$/;"	function	line:13
+h5	D:\web\laragon\www\webapp\src\style\position.less	/^  h5{$/;"	function	line:15
+pre	D:\web\laragon\www\webapp\src\style\position.less	/^  pre{$/;"	function	line:23
