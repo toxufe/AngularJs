@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .f-r {
   float: right;
 }
@@ -25,6 +26,83 @@
   padding-left: 0.4rem;
   padding-right: 0.4rem;
 }
+.foot {
+  border-top: 1px solid #d4d4d4;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 0;
+  height: 40px;
+  line-height: 40px;
+}
+.foot li {
+  font-size: 20px;
+  width: 33%;
+  color: #9f9f9f;
+  text-align: center;
+}
+.foot li.select {
+  background-color: #dbf9f4;
+  color: #01c2a3;
+}
+.foot .icon-document {
+  background-image: url(../image/document.png);
+  width: 25px;
+  height: 21px;
+}
+.foot .icon-search {
+  background-image: url(../image/search.png);
+  width: 25px;
+  height: 21px;
+}
+.foot .icon-me {
+  background-image: url(../image/my.png);
+  width: 25px;
+  height: 21px;
+}
+.body-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 10px;
+  background-color: #fff;
+}
+.body-list .item {
+  margin: 7px 3px;
+  border-bottom: 1px solid #ddd;
+  padding: 0 0 10px 0;
+}
+.body-list .logo {
+  width: 1.52rem;
+  height: 1.52rem;
+  margin-right: 13px;
+}
+.body-list .title {
+  margin: 0;
+  padding: 0;
+}
+.body-list .text {
+  margin: 0;
+  padding: 0;
+}
+.d-ib {
+  display: inline-block;
+}
+.ta-c {
+  text-align: center;
+}
+.va-m {
+  vertical-align: middle;
+}
+.va-t {
+  vertical-align: top;
+}
+.bg-w {
+  background-color: #fff;
+}
 html,
 body {
   width: 100%;
@@ -33,4 +111,5 @@ body {
 }
 body {
   font-size: 0.42666667rem;
+  background: #eee;
 }

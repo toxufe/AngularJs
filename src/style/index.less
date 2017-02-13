@@ -1,4 +1,6 @@
 @import 'template/head.less';
+@import "template/foot.less";
+@import "template/bodyList.less";
 
 
 
@@ -26,6 +28,21 @@
 .pr(@px){
   padding-right: unit(@px/37.5,rem);
 }
+.d-ib {
+  display: inline-block;
+}
+.ta-c {
+  text-align: center;
+}
+.va-m {
+  vertical-align: middle;
+}
+.va-t {
+  vertical-align: top;
+}
+.bg-w{
+  background-color: @defaultColor;
+}
 
 html , body {
   width: 100%;
@@ -35,4 +52,5 @@ html , body {
 
 body {
   .fs(16);
+  background: @bodyBgColor;
 }
